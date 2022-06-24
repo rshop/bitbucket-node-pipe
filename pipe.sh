@@ -19,6 +19,8 @@ npm run build
 cd vendor/rshop/admin
 npm install
 gulp build
+cd ../../../..
 
+if [ -d "node_modules_fe" ]; then
 mv vendor/rshop/frontend/assets/node_modules node_modules_fe
 mv vendor/rshop/admin/node_modules node_modules_be
