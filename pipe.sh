@@ -16,8 +16,11 @@ npm install
 cd ../../../..
 npm install
 npm run build
-npm run admin
-npm run admin
+cd vendor/rshop/admin
+npm install
+gulp build
+gulp build
+cd ../../..
 
 mv vendor/rshop/frontend/assets/node_modules node_modules_fe
 mv vendor/rshop/admin/node_modules node_modules_be
